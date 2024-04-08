@@ -63,10 +63,10 @@ useEffect(() => {
          <p className='text-sm self-center'>
           {imageError ? (
             <span className='text-red-700'>Error uploading
-            image (file size must be less than 2 MB)</span>
-            ) : imagePercent > 0 &&
+            image (file size must be less than 2 MB)</span>) 
+            : imagePercent > 0 &&
             imagePercent < 100 ? (
-              <span className='text-slate-700'>{`Uploading: $
+            <span className='text-slate-700'>{`Uploading: $
               {imagePercent} %`}</span>
             ) : imagePercent === 100 ? (
                 <span className='text-green-700'>Image
